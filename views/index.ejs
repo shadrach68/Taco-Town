@@ -20,15 +20,15 @@
           <%= recipe.name %>
         </h2>
 
-        <h3>Ingredients: </h3>
+        <h3>ingredients: </h3>
         <ul id="ingredientsList">
           <li>
-            <%= recipe.Ingredients.protein.name %>, <%= recipe.Ingredients.protein.preparation %>
+            <%= recipe.ingredients.protein.name %>, <%= recipe.ingredients.protein.preparation %>
           </li>
           <li>
-            <%= recipe.Ingredients.Salsa.name %>
+            <%= recipe.ingredients.salsa.name %>
           </li>
-          <% recipe.Ingredients.toppings.forEach(topping=> { %>
+          <% recipe.ingredients.toppings.forEach(topping=> { %>
             <li>
               <%= topping.quantity %> of <%= topping.name %>
             </li>
@@ -37,18 +37,18 @@
         </ul>
     <% } else{ %>
 
-      
-    } %>
+      <h2>Pick your favourite taco ingredient 👆</h2>
+
+   <%  } %>
     <!-- If no recipe yet, show: -->
-    <h2>Pick your favourite taco ingredient 👆</h2>
     <!-- Else, show the recipe name e.g. <h2>Recipe name</h2>-->
 
-    <h3>Ingredients:</h3>
+    <!-- <h3>ingredients:</h3>
     <ul id="ingredientsList">
       <li>Protein name, protein preparation</li>
       <li>Salsa name</li>
       <li>Every other topping</li>
-    </ul>
+    </ul> -->
 
 
 
